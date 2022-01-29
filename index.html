@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- styles fils -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- js file -->
+    <script src="js/index.js" defer></script>
+    <title>Xpress</title>
+  </head>
+  <body>
+    <span id="overlay"></span>
+    <!-- start header -->
+    <header>
+      <div class="header">
+        <div class="logo-container">
+          <span class="logo">
+            <img src="imags/Group 16546.png" alt="" />
+          </span>
+          <div class="search-bar">
+            <span class="search-icon">
+              <img src="imags/Icon - Magnifier.svg" alt="" />
+            </span>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="What are you looking for ?"
+            />
+          </div>
+          <div class="logo-icon">
+            <div class="links">
+              <a href="#" class="icon">
+                <img
+                  src="imags/png-transparent-google-play-logo-google-play-android-app-store-play-now-button-text-label-logo.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" class="icon">
+                <img
+                  src="imags/png-clipart-app-store-iphone-apple-mobile-app-iphone-electronics-text.png"
+                  alt=""
+                />
+              </a>
+              <span class="border-right"></span>
+            </div>
+            <span class="language"
+              ><i class="fas fa-caret-down"></i>language
+            </span>
+            <div class="cart">
+              <span class="cart-icon"
+                ><i class="far fa-shopping-cart">
+                  <span class="count">0</span></i
+                >
+              </span>
+              <div class="show-cart hidden">
+                <div class="show-cart-itmes"></div>
+                <div>
+                  <hr />
+                  <div class="cart-footer">
+                    <div class="address">
+                      <h4>Address</h4>
+                      <div>Block Number, Street Name</div>
+                      <div>Building Floor, Apartment</div>
+                    </div>
+                    <div class="subtotal">
+                      <p>subtotal</p>
+                      <span>$<span class="total-price"></span></span>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <button class="cart-btn">Show All</button>
+                    <button class="cart-btn" id="cheakout">Cheakout</button>
+                  </div>
+                </div>
+              </div>
+              <span class="user-icon">
+                <img src="imags/User Icon.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr class="border-bottom" />
+        <div class="container-content">
+          <div class="nav">
+            <ul class="nav-items">
+              <li class="nav-item">Cards</li>
+              <li class="nav-item">Grocery</li>
+              <li class="nav-item">Telecom</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start main section -->
+    <div class="img-section">
+      <div class="main-section container-content">
+        <div class="content">
+          <h2>70% Off</h2>
+          <p>On everything today</p>
+          <button class="get-now-btn">get now</button>
+        </div>
+      </div>
+      <div class="bullets">
+        <div class="slide-bullets">
+          <span class="slide-bullet active"></span>
+          <span class="slide-bullet"></span>
+          <span class="slide-bullet"></span>
+        </div>
+      </div>
+    </div>
+    <!-- end main section -->
+    <!-- start product -->
+    <div class="container-content products">
+      <h3>popular products</h3>
+      <div class="products-items">
+        <div class="card" id="item1">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40</span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item1">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item1">+</span>
+            <button class="add-card-btn" data-item="item1">Add</button>
+          </div>
+        </div>
+        <div class="card" id="item2">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40 </span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item2">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item2">+</span>
+            <button class="add-card-btn" data-item="item2">Add</button>
+          </div>
+        </div>
+        <div class="card" id="item3">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40 </span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item3">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item3">+</span>
+            <button class="add-card-btn" data-item="item3">Add</button>
+          </div>
+        </div>
+        <div class="card" id="item4">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40 </span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item4">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item4">+</span>
+            <button class="add-card-btn" data-item="item4">Add</button>
+          </div>
+        </div>
+        <div class="card" id="item5">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40 </span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item5">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item5">+</span>
+            <button class="add-card-btn" data-item="item5">Add</button>
+          </div>
+        </div>
+        <div class="card" id="item6">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+            <span class="size">size:000</span>
+            <span class="old-price">40 KWD</span>
+            <span class="update-price"
+              ><span class="new-price">40</span>KWD</span
+            >
+          </div>
+          <div class="footer">
+            <span class="remove" data-remove-item="item6">-</span>
+            <span class="card-count">1</span>
+            <span class="add" data-add-item="item6">+</span>
+            <button class="add-card-btn" data-item="item6">Add</button>
+          </div>
+        </div>
+      </div>
+      <h3>Repeat Recent</h3>
+      <div class="recent-items">
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <img src="imags/Mask Group 5.png" alt="" />
+          </div>
+          <div class="body">
+            <p>Autumn women’s new high-waist slim..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end product -->
+    <!-- start footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="/imags/Group_16546-removebg-preview.png" alt="" />
+          </div>
+          <div class="info">
+            <div class="navigate">
+              <h5>navigate</h5>
+              <ul>
+                <li>card</li>
+                <li>Grocery</li>
+                <li>telecom</li>
+              </ul>
+            </div>
+            <div class="information">
+              <h5>information</h5>
+              <ul>
+                <li>about us</li>
+                <li>privacy&policy</li>
+                <li>terms&conditions</li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h5>follow us</h5>
+              <div class="media">
+                <a href="">
+                  <img src="imags/Facebook Copy.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/Twitter.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/Instagram Copy.svg" alt="" />
+                </a>
+              </div>
+              <div class="footer-link">
+                <a href="#" class="icon">
+                  <img
+                    class="play-store-image"
+                    src="./imags/png-transparent-google-play-logo-google-play-android-app-store-play-now-button-text-label-logo.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="icon">
+                  <img
+                    src="imags/png-clipart-app-store-iphone-apple-mobile-app-iphone-electronics-text.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <h6 class="payment-heading">payment methods</h6>
+              <div class="payment-method">
+                <a href="">
+                  <img src="imags/paymentMethod/visa.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/paymentMethod/paypal.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/paymentMethod/mastercard.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/paymentMethod/discover.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/paymentMethod/diners club.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="imags/paymentMethod/american express.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-icon">
+          <img src="imags/Group 14446.svg" alt="" />
+        </div>
+      </div>
+      <p class="copy-right">All Rights Reserved © 2021</p>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
